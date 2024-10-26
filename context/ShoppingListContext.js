@@ -16,7 +16,7 @@ export const ShoppingListProvider = ({ children }) => {
       const itemList = itemSnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
       setItems(itemList);
     };
-
+// Henter indkøbslister fra Firestore-databasen
     const fetchShoppingLists = async () => {
       const listsCollection = collection(db, 'savedShoppingLists');
       const listSnapshot = await getDocs(listsCollection);
@@ -38,7 +38,7 @@ export const ShoppingListProvider = ({ children }) => {
   const clearList = () => {
     setItems([]); // Tøm listen lokalt
   };
-
+// Gemmer indkøbslisten i Firestore-databasen
   const saveShoppingList = async (listName) => {
     const newList = { name: listName, items };
     await addDoc(collection(db, 'savedShoppingLists'), newList);

@@ -10,7 +10,7 @@ const ShoppingListScreen = () => {
   const handleSaveList = () => {
     if (listName.trim() !== '') {
       saveShoppingList(listName);
-      setListName(''); // Clear the input field
+      setListName(''); // tekstfeltet tømmes
     } else {
       alert('Indtast et navn til indkøbslisten.');
     }

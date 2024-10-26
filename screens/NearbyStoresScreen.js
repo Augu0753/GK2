@@ -127,9 +127,9 @@ const styles = StyleSheet.create({
     ...StyleSheet.absoluteFillObject,
   },
   storeContainer: {
-    backgroundColor: 'white', // Hvid baggrund
-    padding: 5, // Lidt padding
-    borderRadius: 5, // Rundede hjørner
+    backgroundColor: 'white', 
+    padding: 5, 
+    borderRadius: 5, 
   },
   storeName: {
     color: 'black',

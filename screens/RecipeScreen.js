@@ -11,7 +11,7 @@ export default function RecipeScreen({ navigation }) {
   useEffect(() => {
     const fetchRecipes = async () => {
       try {
-        const response = await fetch('https://www.themealdb.com/api/json/v1/1/search.php?s='); // Henter alle opskrifter
+        const response = await fetch('https://www.themealdb.com/api/json/v1/1/search.php?s='); // Henter alle opskrifter fra API
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }

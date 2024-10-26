@@ -1,8 +1,8 @@
-// Import the functions you need from the SDKs you need
+// Importerer funnktionerne jeg har brug for fra Firebase
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore"; // Import Firestore
+import { getFirestore } from "firebase/firestore"; // Firestore er databasen i Firebase
 
-// Your web app's Firebase configuration
+// Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyBVPK5FNWoCubakzeF-aeVbwpVq6Jwp5Yk",
   authDomain: "shoppinglistapp-58acf.firebaseapp.com",
