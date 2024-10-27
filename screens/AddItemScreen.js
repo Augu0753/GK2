@@ -1,7 +1,9 @@
+// Importerer nødvendige moduler fra React, React Native og konteksten for indkøbslisten
 import React, { useState, useContext } from 'react';
 import { View, TextInput, Button, StyleSheet } from 'react-native';
 import { ShoppingListContext } from '../context/ShoppingListContext';
 
+// Komponent til at tilføje en vare til indkøbslisten
 export default function AddItemScreen({ navigation }) {
   const [itemName, setItemName] = useState('');
   const { addItem } = useContext(ShoppingListContext);
@@ -26,7 +28,7 @@ export default function AddItemScreen({ navigation }) {
     </View>
   );
 }
-
+//styling
 const styles = StyleSheet.create({
   container: {
     flex: 1,

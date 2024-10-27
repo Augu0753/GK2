@@ -68,7 +68,7 @@ export default function RecipeScreen({ navigation }) {
     </View>
   );
 }
-
+//styling
 const styles = StyleSheet.create({
   container: {
     flex: 1,

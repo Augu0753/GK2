@@ -26,7 +26,7 @@ const ShoppingListScreen = () => {
             <FlatList
               data={items}
               renderItem={({ item }) => <Text style={styles.item}>{item.name}</Text>}
-              keyExtractor={item => item.id.toString()} // Ensure unique keys
+              keyExtractor={item => item.id.toString()} // sætter unikke keys til elementer
             />
           ) : (
             <Text style={styles.emptyListText}>Listen er tom.</Text>
